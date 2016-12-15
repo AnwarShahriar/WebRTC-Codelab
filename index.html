@@ -2,7 +2,16 @@
 <html class="no-js">
     <head>
         <title>WebRTC Test</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/adapterjs/0.14.0/adapter.min.js"></script>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            video {
+                max-width: 100%;
+                width: 320px;
+            }
+        </style>
     </head>
     <body>
         <video id="localVideo" autoplay></video>
@@ -14,6 +23,7 @@
             <button id="hangupButton">Hang Up</button>
         </div>
 
-        <script src="./js/main.js"></script>
+        <script src="js/lib/adapter.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
